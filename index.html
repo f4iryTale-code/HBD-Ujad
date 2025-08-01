@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ucapan Ulang Tahun</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+      position: relative;
+      color: #fff;
+    }
+    video.bg-video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -2;
+      filter: blur(8px) brightness(0.6);
+    }
+    .content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+    .card {
+      background-color: rgba(255, 240, 245, 0.85);
+      color: #555;
+      padding: 30px 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      max-width: 600px;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .card img {
+      width: 120px;
+      margin-top: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <video class="bg-video" autoplay loop muted>
+    <source src="fosil.mp4" type="video/mp4">
+    Browser Anda tidak mendukung video background.
+  </video>
+
+  <div class="content">
+    <div class="card">
+      <h2>Selamat ulang tahun Ujad_Smith!</h2>
+      <p>Semoga panjang umur, sehat selalu, dan segala keinginanmu tercapai.</p>
+      <p>Tetap jadi pribadi yang baik dan membahagiakan orang-orang di sekitarmu.</p>
+      <img src="Mika_Portrait.png" alt="Mika Chibi">
+    </div>
+  </div>
+</body>
+</html>
